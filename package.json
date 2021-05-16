@@ -6,7 +6,7 @@
   "scripts": {
     "copy": "cpx \"src/dashboard/**/*.handlebars\" build/dashboard",
     "build": "tsc",
-    "heroku-postbuild": "npm run copy",
+    "heroku-postbuild": "npm run build && npm run copy",
     "dev": "nodemon src/server.ts --exec ts-node",
     "test": "echo \"Error: no test specified\" && exit 1",
    
